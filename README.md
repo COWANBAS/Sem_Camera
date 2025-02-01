@@ -4,7 +4,7 @@
 
 ![image](https://github.com/user-attachments/assets/8fa3691d-b2cd-4776-8895-5ebb35f6b856)
 
-if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia): Verifica se o objeto navigator.mediaDevices e a função getUserMedia existem. Isso é importante para garantir que o código só tente sobrescrever a função se ela realmente existir.
+(navigator.mediaDevices && navigator.mediaDevices.getUserMedia): Verifica se o objeto navigator.mediaDevices e a função getUserMedia existem. Isso é importante para garantir que o código só tente sobrescrever a função se ela realmente existir.
 Armazenar a Função Original:
 
 const originalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);: Armazena a função original getUserMedia para que ainda possamos chamar a funcionalidade original se necessário.
