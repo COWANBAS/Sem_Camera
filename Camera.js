@@ -2,7 +2,7 @@
 // @name           Bloquear Camera
 // @description    Bloqueia o acesso de sites a camera do computador automaticamente.
 // @namespace      CowanCAM
-// @license        CowBas
+// @license        GPL-3.0
 // @version        1.0
 // @author         Cowanbas
 // @match          *://*/*
@@ -22,4 +22,5 @@
       return originalGetUserMedia(constraints);
     };
   }
+
 })();
